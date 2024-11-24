@@ -660,7 +660,7 @@ border-radius: 4px;
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
 }
@@ -750,7 +750,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     align-items: center;
     justify-content: center;
     fill: transparent;
-
+margin-right: 8px;
 }
 
 .modal-form-label-link {
@@ -762,11 +762,10 @@ border: 1px solid rgba(46, 47, 66, 0.4);
         
 }
 
-.modal-form-cb-input:checked .modal-form-cb-span{
+.modal-form-cb-input:checked + .modal-form-label-cb .modal-form-cb-span{
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
-
 }
 
 .modal-send-btn{
