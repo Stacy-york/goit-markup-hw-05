@@ -182,7 +182,7 @@ margin: 0 auto;
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #404bbf;;
+    background-color: #404bbf;
 }
 
 /* #endregion */
@@ -699,20 +699,25 @@ pointer-events: none;
 .modal-send-btn{
 border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: #4d5ae5;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            text-align: center;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: block;
+         margin: 0 auto;
+         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-send-btn-name{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-
+.modal-send-btn:hover, 
+.modal-send-btn:focus {
+background-color: #404bbf;
 }
-
 /* #endregion */
