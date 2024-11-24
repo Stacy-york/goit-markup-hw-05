@@ -702,27 +702,71 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%) scale(1.5);
 }
 
-.modal-form-textarea{
-    width: 100%;
-    padding: 8px 16px;
+.modal-form-comment{
+    margin-bottom: 16px
 }
 
-.modal-form-textarea::placeholder {
-        font-size: 12px;
-        line-height: 1.16667;
+.modal-form-textarea{
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        background-color: transparent;
+        outline: transparent;
+        resize: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-textarea:focus{
+border-color: #4D5AE5;
 }
 
 .modal-form-checkbox {
     display: flex;
+    margin-bottom: 24px;
 }
 
-.modal-form-label-span {
+.modal-form-label-cb {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;;
+}
+
+.modal-form-cb-span{
+width: 16px;
+height: 16px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+
+}
+
+.modal-form-label-link {
+   
     line-height: 1.33333;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #4d5ae5;
+        
+}
+
+.modal-form-cb-input:checked .modal-form-cb-span{
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+
 }
 
 .modal-send-btn{
@@ -730,6 +774,7 @@ border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
     height: 56px;
+    font-family: "Roboto", sans-serif;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: #4d5ae5;
         font-weight: 500;
