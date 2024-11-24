@@ -502,6 +502,7 @@ background-color: #31d0aa;
 }
 
 .footer-form {
+    gap: 24px;
     display: flex;
 }
 
@@ -511,14 +512,27 @@ background-color: #31d0aa;
         height: 40px;
         width: 264px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-        margin-right: 34px;
+        background-color: transparent;
+        font-size: 12px;
+            line-height: 2;
+            letter-spacing: 0.04em;
+            color: #ffffff;
+            padding-left: 16px;
+}
+
+.footer-form-input:focus {
+    border: 1px solid #4d5ae5;
+}
+
+.footer-form-input::placeholder {
+    color: #ffffff;
 }
 
 .footer-form-btn {
 display: flex;
 border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
     justify-content: center;
